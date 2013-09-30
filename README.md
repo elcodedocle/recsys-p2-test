@@ -3,7 +3,7 @@ recsys-p2-test
 
 Coursera UMN Intro to Recommender Systems - Programming Assigment 2 TestNG Test
 
-To enable testng on your maven project add the following dependency to pom.xml dependencies section:
+To enable testng on your maven project add the following dependency to `pom.xml` dependencies section:
 ```xml
 <dependency>
   <groupId>org.grouplens.lenskit</groupId>
