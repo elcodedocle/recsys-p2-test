@@ -31,19 +31,21 @@ public class CBFMain {
 
     public static void main(String[] args) throws RecommenderBuildException {
         Boolean weighted = false;
+        int firstUidIndex = 1;
         if (args[0].compareTo("weighted")==0){
             weighted=true;
         } else if (args[0].compareTo("weighted")==0){
             weighted = false;
         } else {
-            logger.error("invalid input argument: args[0] must be `weighted' or `unweighted'");
+            firstUidIndex = 0;
         }
         LenskitConfiguration config = configureRecommender(new Weighted(weighted));
 
         logger.info("building recommender");
         Recommender rec = LenskitRecommender.build(config);
 
-        if (args.length == 0) {
+        if ((args.length == 0)&&(firstUidIndex == 0)||
+            (args.length == 1)&&(firstUidIndex == 1)){
             logger.error("No users specified; provide user IDs as command line arguments");
         }
 
@@ -54,7 +56,7 @@ public class CBFMain {
 
             // Generate 5 recommendations for each user
             String user;
-            for (int i=1;i<args.length;i++) {
+            for (int i=firstUidIndex;i<args.length;i++) {
                 user = args[i];
                 long uid;
                 try {
