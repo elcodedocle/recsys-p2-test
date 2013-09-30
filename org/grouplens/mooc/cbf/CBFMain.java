@@ -34,7 +34,7 @@ public class CBFMain {
         int firstUidIndex = 1;
         if (args[0].compareTo("weighted")==0){
             weighted=true;
-        } else if (args[0].compareTo("weighted")==0){
+        } else if (args[0].compareTo("unweighted")==0){
             weighted = false;
         } else {
             firstUidIndex = 0;
