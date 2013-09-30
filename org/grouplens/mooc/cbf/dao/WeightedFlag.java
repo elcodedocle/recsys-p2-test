@@ -6,8 +6,8 @@ import javax.inject.Qualifier;
 import java.lang.annotation.*;
 
 /**
- * Parameter annotation for the move tag file.
- * @author <a href="http://www.grouplens.org">GroupLens Research</a>
+ * Parameter annotation for user profile elaboration method selection.
+ * @author Gael Abadin
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
