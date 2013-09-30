@@ -4,7 +4,7 @@ recsys-p2-test
 Coursera UMN Intro to Recommender Systems - Programming Assigment 2 TestNG Test
 
 
-In order to inyect dependecies to test both unweighted and weighted profiles modify TFDIFItemScorer constructor:
+In order to test both unweighted and weighted profiles, use provided CBFMain and Weighted classes and Weighted flag parameter annotation and inyect profile type on TFDIFItemScorer constructor:
 
 ```java
     @Inject
@@ -14,5 +14,7 @@ In order to inyect dependecies to test both unweighted and weighted profiles mod
         this.weighted = weighted.flag;
     }
 ```
+
+More on guice dependency inyection at https://code.google.com/p/google-guice/wiki/GettingStarted
 
 Have fun.
