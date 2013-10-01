@@ -6,11 +6,10 @@ Coursera UMN Intro to Recommender Systems - Programming Assigment 2 TestNG Test
 To enable testng on your maven project add the following dependency to `pom.xml` dependencies section:
 ```xml
 <dependency>
-  <groupId>org.grouplens.lenskit</groupId>
-  <artifactId>lenskit-core</artifactId>
-  <version>${lenskit.version}</version>
+  <groupId>org.testng</groupId>
+  <artifactId>testng</artifactId>
+  <version>6.8.7</version>
 </dependency>
-<dependency>
 ```
 
 The test runs for both unweighted and weighted profiles. Provided `CBFMain` and `Weighted` classes and `WeightedFlag` parameter annotation add support for profile type selection using the first command line argument (Values `weighted` or `unweighted`), as long as you properly inyect the configuration parameter on `TFDIFItemScorer`'s constructor like this:
