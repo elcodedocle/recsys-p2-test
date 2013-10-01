@@ -12,7 +12,7 @@ To enable testng on your maven project add the following dependency to `pom.xml`
 </dependency>
 ```
 
-The test runs for both unweighted and weighted profiles. Provided `CBFMain` and `Weighted` classes and `WeightedFlag` parameter annotation add support for profile type selection using the first command line argument (Values `weighted` or `unweighted`), as long as you properly inyect the configuration parameter on `TFDIFItemScorer`'s constructor like this:
+The test runs for both unweighted and weighted profiles. Provided `CBFMain` and `Weighted` classes and `WeightedFlag` parameter annotation add support for profile type selection using the first command line argument (Values `weighted` or `unweighted`), as long as you properly inject the configuration parameter on `TFDIFItemScorer`'s constructor like this:
 ```java
 private final Boolean weighted;
 
