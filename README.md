@@ -35,6 +35,7 @@ if (weighted){
     }
 }
 ```
-(More on guice dependency inyection at https://code.google.com/p/google-guice/wiki/GettingStarted)
+- More on lenskit dependency injection (Grapht): https://github.com/grouplens/grapht
+- Grapht works pretty much like Google Guice, which has a very good [_getting started guide_](https://code.google.com/p/google-guice/wiki/GettingStarted)
 
 Have fun.
